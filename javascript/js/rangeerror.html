@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript RangeError</title>
+</head>
+<body>
+    <script>
+    var num = 12.735;
+        try {        
+        num.toFixed(200); // throws a range error (allowable range from 0 to 100)
+    } catch(e) {
+        document.write(e.name + ": " +  e.message);
+    }
+    </script>
+</body>
+</html>
